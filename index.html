@@ -11,10 +11,16 @@
         width: 60%;
         padding: 10px;
       }
+
+      .line-4 hr {
+ 	height: 1px;
+  	border: 0;
+  	background: black;
+      }
     </style>
 
   <body class="center">
-    <div></div>
+    <div class="line-4"></div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['sankey']});
@@ -33,10 +39,10 @@
 		['VM Instances','Cloud Monitoring', 1],
 		['Cloud Security','Cloud Pub/Sub', 1],
 		['Cloud Assets','Cloud Pub/Sub', 1],
-		['Cloud Assets','Cloud Storage', 1],
+		['Cloud Assets','Cloud Storage', 2],
             
             // Google monitor section
-		['Cloud Logging','Cloud Pub/Sub', 1],
+		['Cloud Logging','Cloud Pub/Sub', 2],
 		['Cloud Monitoring','Cloud Functions', 1],
             
             // Google collect section
@@ -51,7 +57,7 @@
 		['Cloud Pub/Sub','Splunk Add-on', 1],
 		['Cloud Billing','Splunk Add-on', 1],
 		['Cloud Dataflow','HEC', 1],
-		['Cloud Functions','HEC', 1],
+		['Cloud Functions','HEC', 3],
             
             
 
